@@ -8,5 +8,20 @@
         <p>Wrong Page <strong>Idiot</strong></p><br><br>
         <p>make sure the url is Dino099.github.io/******</p><br>
         <p>where the ****** is your student ID</p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <input type="text" id="field2" name="field2" value="618583" >
+        <br>
+        <input type="text" id="result" name="resut" value="">
+
+        <script>
+        $("#field1, #field2").keyup(function(){
+            update();
+        });
+        
+        function update() {
+          $("#result").val($('#field1').val());
+        }
+        </script>
     </body>
 </html>
